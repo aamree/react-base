@@ -1,0 +1,24 @@
+{
+  "name": "react-base",
+  "version": "1.0.0",
+  "description": "Тестовый проект",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aamree/react-base.git"
+  },
+  "author": "ADLET",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aamree/react-base/issues"
+  },
+  "homepage": "https://github.com/aamree/react-base#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

@@ -4,9 +4,9 @@
     "description": "Тестовый проект",
     "private": "true",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack",
-        "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix src/"
+        "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix src/",
+        "test": "npx jest"
     },
     "repository": {
         "type": "git",
@@ -23,14 +23,17 @@
         "@babel/plugin-transform-typescript": "^7.11.0",
         "@babel/preset-env": "^7.11.5",
         "@babel/preset-typescript": "^7.10.4",
+        "@types/jest": "^26.0.14",
         "@typescript-eslint/eslint-plugin": "^4.1.1",
         "@typescript-eslint/parser": "^4.1.1",
+        "babel-jest": "^26.3.0",
         "babel-loader": "^8.1.0",
         "css-loader": "^4.3.0",
         "eslint": "^7.9.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-prettier": "^3.1.4",
         "html-webpack-plugin": "^4.4.1",
+        "jest": "^26.4.2",
         "mini-css-extract-plugin": "^0.11.2",
         "prettier": "2.1.2",
         "style-loader": "^1.2.1",

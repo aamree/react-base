@@ -1,5 +1,7 @@
-import "./style.css";
+const user = {
+    firstName: 'Adlet',
+    lastName: 'Hardy',
+    role: 'IT',
+}
 
-const x: number = 0;
-
-const func3 = (): string => "22";
+console.log(user.firstName)

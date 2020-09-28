@@ -4,4 +4,4 @@ const user = {
     role: 'IT',
 }
 
-console.log(user.firstName)
+console.log(user.firstName, 'test')

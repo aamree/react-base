@@ -1,64 +1,77 @@
 {
-    "name": "react-base",
-    "version": "1.0.0",
-    "description": "Тестовый проект",
-    "private": "true",
-    "scripts": {
-        "build": "npx webpack --mode production",
-        "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix src/",
-        "test": "npx jest",
-        "check": "npm test && npm run lint",
-        "calc": "npx ts-node src/typescript"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run check",
-            "pre-push": "npm run check"
-        }
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/aamree/react-base.git"
-    },
-    "author": "Adlet <adilet90@mail.ru>",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/aamree/react-base/issues"
-    },
-    "homepage": "https://github.com/aamree/react-base#readme",
-    "devDependencies": {
-        "@babel/core": "^7.11.5",
-        "@babel/plugin-transform-typescript": "^7.11.0",
-        "@babel/preset-env": "^7.11.5",
-        "@babel/preset-react": "^7.10.4",
-        "@babel/preset-typescript": "^7.10.4",
-        "@types/jest": "^26.0.14",
-        "@types/react": "^16.9.49",
-        "@typescript-eslint/eslint-plugin": "^4.1.1",
-        "@typescript-eslint/parser": "^4.1.1",
-        "babel-jest": "^26.3.0",
-        "babel-loader": "^8.1.0",
-        "css-loader": "^4.3.0",
-        "enzyme": "^3.11.0",
-        "enzyme-adapter-react-16": "^1.15.5",
-        "eslint": "^7.9.0",
-        "eslint-config-prettier": "^6.11.0",
-        "eslint-plugin-prettier": "^3.1.4",
-        "eslint-plugin-react": "^7.21.2",
-        "html-webpack-plugin": "^4.4.1",
-        "husky": "^4.3.0",
-        "jest": "^26.4.2",
-        "mini-css-extract-plugin": "^0.11.2",
-        "prettier": "2.1.2",
-        "style-loader": "^1.2.1",
-        "ts-node": "^9.0.0",
-        "typescript": "^4.0.2",
-        "webpack": "^4.44.1",
-        "webpack-cli": "^3.3.12",
-        "webpack-dev-server": "^3.11.0"
-    },
-    "dependencies": {
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1"
+  "name": "react-base",
+  "version": "1.0.0",
+  "description": "Тестовый проект",
+  "private": "true",
+  "scripts": {
+    "start": "npx webpack-dev-server --mode development --open --hot",
+    "build": "npx webpack --mode production",
+    "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix src/",
+    "test": "npx jest",
+    "check": "npm test && npm run lint",
+    "calc": "npx ts-node src/typescript",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check",
+      "pre-push": "npm run check"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aamree/react-base.git"
+  },
+  "author": "Adlet <adilet90@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aamree/react-base/issues"
+  },
+  "homepage": "https://github.com/aamree/react-base#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/plugin-transform-typescript": "^7.11.0",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@storybook/addon-actions": "^6.0.22",
+    "@storybook/addon-essentials": "^6.0.22",
+    "@storybook/addon-knobs": "^6.0.22",
+    "@storybook/addon-links": "^6.0.22",
+    "@storybook/addon-storysource": "^6.0.22",
+    "@storybook/addons": "^6.0.22",
+    "@storybook/react": "^6.0.22",
+    "@types/enzyme": "^3.10.7",
+    "@types/jest": "^26.0.14",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "babel-jest": "^26.3.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.2",
+    "html-webpack-plugin": "^4.4.1",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "mini-css-extract-plugin": "^0.11.2",
+    "prettier": "2.1.2",
+    "react-is": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }

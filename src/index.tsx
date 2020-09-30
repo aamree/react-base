@@ -1,7 +1,6 @@
-const user = {
-    firstName: 'Adlet',
-    lastName: 'Hardy',
-    role: 'IT',
-}
+import React from 'react'
+import { render } from 'react-dom'
 
-console.log(user.firstName)
+import { ClickCounter } from './ClickCounter'
+
+render(<ClickCounter start={1} />, document.getElementById('root'))
